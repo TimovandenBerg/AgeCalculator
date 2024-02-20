@@ -10,5 +10,65 @@
       href="./output.css" />
     <title>Age Calculator</title>
   </head>
-  <body></body>
+  <body
+    class="h-screen bg-n-off-white flex justify-center items-center font-poppins">
+    <section class="h-5/6 w-4/5 p-5 bg-n-white flex flex-col">
+      <form class="flex flex-row justify-center items-center gap-x-4 w-full">
+        <section class="flex flex-col w-full">
+          <label
+            for="birth-day"
+            class="text-n-smokey-grey tracking-widest text-sm font-medium uppercase mb-1">
+            Day</label
+          >
+          <input
+            class="border border-n-smokey-grey w-full rounded-md font-bold text-lg p-2 focus:border-p-purple"
+            type="number"
+            min="1"
+            max="31"
+            id="birth-day"
+            required />
+        </section>
+        <section class="flex flex-col w-full">
+          <label
+            class="text-n-smokey-grey tracking-widest text-sm font-medium uppercase mb-1"
+            for="birth-month"
+            >Month</label
+          >
+          <input
+            class="border border-n-smokey-grey w-full rounded-md font-bold text-lg p-2 focus:border-p-purple"
+            type="number"
+            min="1"
+            max="12"
+            id="birth-month"
+            required />
+        </section>
+        <section class="flex flex-col w-full">
+          <label
+            class="text-n-smokey-grey tracking-widest text-sm font-medium uppercase mb-1"
+            for="birth-year"
+            >Year</label
+          >
+          <input
+            class="border border-n-smokey-grey w-full rounded-md font-bold text-lg p-2 focus:border-p-purple"
+            type="number"
+            id="birth-year"
+            required />
+        </section>
+      </form>
+      <section>
+        <button type="submit">
+          <img
+            src="./assets/img/icon-arrow.svg"
+            alt="svg of arrow" />
+          Submit
+        </button>
+        <div>Divider</div>
+      </section>
+      <section>
+        <p>years</p>
+        <p>months</p>
+        <p>days</p>
+      </section>
+    </section>
+  </body>
 </html>
